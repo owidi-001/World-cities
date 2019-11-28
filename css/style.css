@@ -1,0 +1,83 @@
+html,body{
+    background-color: rgb(44, 43, 43);
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+nav.navbar{
+    background-color: rgb(3, 3, 26)!important;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+nav.navbar a.navbar-brand{
+    color: whitesmoke;
+    font-weight: 700;
+}
+section#showcase div.row{
+    background-image: url('../imgs/two.jpg');
+    height: 800px;
+    /* background-image: url('./imgs/wall.jpg') right bottom no-repeat, url(paper.gif) left top repeat; */
+    opacity: 0.8;
+    border-bottom: #000 solid 1px;
+}
+section#showcase div.row div.caption-title{
+    margin: 200px auto;   
+
+}
+section#showcase div.row div.caption-title div.container{
+    color: #fff;
+    
+}
+section#showcase div.row div.title{
+    margin: 200px auto;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(12, 31, 59);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#floats{
+   height: 400px;
+    
+}
+#floats div.row div{
+    border: 1px solid blue;
+    border-radius: 10px;
+    min-height: 200px;
+    text-align: center;
+}
+
+#jumbotron{
+    color: #fff;
+    background-color: rgb(15, 15, 83) !important;
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+}
+section#extras{
+    background: rgba(218, 218, 218, 0.486);
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+}
+section#more div.jumbotron-fluid{
+    min-height: 500px;
+    color: whitesmoke;
+    background-color:rgb(6, 6, 53) !important;
+    
+}
+section#more div.jumbotron-fluid div.text{
+    /* padding: 30px; */
+    margin:100px auto;
+}
+div#rate{
+    /* text-align: center; */
+    background-color: #eee;
+    min-height: 300px;
+
+}
+div#rate form input{
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(6, 5, 46);
+    color: whitesmoke;
+}
+/* clip-path: polygon(66% 0, 100% 0%, 100% 100%, 34% 100%); */
