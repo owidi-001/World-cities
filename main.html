@@ -12,6 +12,15 @@
 
     <title>cities!</title>
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- bootstrap glaphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
     <!-- local css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -22,36 +31,40 @@
     <!-- nav section -->
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light sticky-top">
-            <a class="navbar-brand">cities</a>
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </nav>
+        <a class="navbar-brand">cities</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
 
     <!-- showcase area -->
     <section id="showcase">
-        <div class="row">
-            <div class="col caption-title">
-                <div class="container">
-                    <h3>some litle caption thing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam nihil itaque animi
-                        voluptates
-                        explicabo nulla aliquam saepe numquam libero repellendus quam, iusto necessitatibus blanditiis
-                        deleniti
-                        dolor. Ratione, iste aspernatur?</p>
-                    <button class="btn btn-primary">Get Started</button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col caption-title">
+                    <div class="text-center">
+                        <h2 class="p-2">some litle caption thing</h2>
+                        <p class="text-flow p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            quisquam nihil itaque animi
+                            voluptates
+                            explicabo nulla aliquam saepe numquam libero repellendus quam, iusto necessitatibus
+                            blanditiis
+                            deleniti
+                            dolor. Ratione, iste aspernatur?</p>
+                        <button class="btn btn-light">Get Started <i class="material-icon">cogs</i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="col title">
-                The cities hub
-                the greatness lives
+                <div class="col title text-center">
+                    The cities hub
+                    the greatness lives
+                </div>
             </div>
         </div>
     </section>
 
     <!-- toast message -->
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-toggle="tooltip"
+    <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-toggle="tooltip"
         title="Disabled tooltip">
         <div class="toast-header">
             <img src="..." class="rounded mr-2" alt="...">
@@ -64,105 +77,15 @@
         <div class="toast-body">
             Browse though the greatest cities of the world.
         </div>
-    </div>
-
-    <!-- tool tip to remove the toast -->
-    <!-- <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
-        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
-    </span> -->
+    </div> -->
 
     <!-- the floats cardies -->
     <div id="floats">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <h6>some thing</h6>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, temporibus.</p>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <h6>some thing</h6>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, temporibus.</p>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <h6>some thing</h6>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, temporibus.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- jumbotron fluid clipped path -->
-    <div class="jumbotron jumbotron-fluid row" id="jumbotron">
-        <!-- cauresel    -->
-        <div id="carouselExampleCaptions" class="carousel slide col-6" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./imgs/one.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/two.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./imgs/three.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <!-- clipped side -->
-        <div class="container col-6">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima rerum cumque provident
-                perspiciatis dolores non illo. Animi saepe labore incidunt provident pariatur et totam mollitia impedit
-                repudiandae, illo molestiae id doloribus fugit sed? Sunt consectetur vel molestiae repudiandae
-                doloremque corporis alias. Laborum sint voluptates fugiat minus cumque nulla reprehenderit impedit quis
-                nam ex, recusandae, accusamus non id dignissimos labore dolorum? Velit fuga quod ex amet repellat
-                perspiciatis nulla, quisquam cupiditate!
-                \This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
-    </div>
-
-    <section id="extras">
-        <div class="container">
-            <div class="row">
+        <div class="container p-3">
+            <h4 class="text-center p-2">Browse through your fave city</h4>
+            <div class="row p-4">
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./imgs/four.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="./imgs/five.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -171,7 +94,16 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
+                        <img src="./imgs/four.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
                         <img src="./imgs/six.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -181,94 +113,183 @@
                 </div>
             </div>
         </div>
+    </div>
 
+
+    <!-- jumbotron fluid clipped path -->
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+        <div class="row">
+            <!-- cauresel    -->
+            <div class="col-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imgs/one.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imgs/two.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imgs/five.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- clipped side -->
+            <div class="col-6 side-content">
+                <h1 class="display-5">Fluid jumbotron</h1>
+                <div class="container text-right">
+                    <p class="text p-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima rerum
+                        cumque provident
+                        perspiciatis dolores non illo. Animi saepe labore incidunt provident pariatur et totam mollitia
+                        impedi
+                        \This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="extras">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse fugit mollitia hic, molestiae autem quibusdam
+            fugiat temporibus ratione non eius tempora impedit eos nobis quasi necessitatibus accusantium qui sapiente
+            error.
+        </p>
     </section>
     <section id="more">
         <div class="jumbotron-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="text">
+                        <div class="text-left">
                             <h2>head one</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt beatae
                                 reiciendis velit dignissimos. Ullam, atque? Accusamus quod culpa quia.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="text">
+                        <div class="text-center">
                             <h2>head one</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt beatae
                                 reiciendis velit dignissimos. Ullam, atque? Accusamus quod culpa quia.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="text">
+                        <div class="text-right">
                             <h2>head one</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt beatae
                                 reiciendis velit dignissimos. Ullam, atque? Accusamus quod culpa quia.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="register">
+                    <h5 class="text-center p-2">Subscribe to regular updates</h5>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <div class="row">
+                                <input type="email" class="form-control p-2" name="subscribe" id="#"
+                                    placeholder="Subscribe to our updates">
+                                <button type="submit" class="btn-outline-secondary form-control p-2"
+                                    value="Subscribe">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+
         </div>
     </section>
 
 
-    <!-- rate cities -->
-    <div class="container" id="rate">
-        <form class="p-2">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-            </div>
-           
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+        <div class="connect">
+            <div class="container">
 
-                <div class="form-group col-md-6">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Remember my choice on next log in
-                        </label>
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get in touch with us!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!-- Facebook -->
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+                        <!-- Twitter -->
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+                        <!-- Google +-->
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-google-plus-g fa-stack-1x"></i>
+                        </span>
+                        <!--Linkedin -->
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-linkedin-in fa-stack-1x"></i>
+                        </span>
+                        <!--Instagram-->
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x"></i>
+                        </span>
                     </div>
                 </div>
-                <div class="form-group col-md-6">
-
-                    <button type="submit" class="btn btn-primary form-control">Rate</button>
-                </div>
             </div>
+        </div>
 
+        <!-- Footer Elements -->
+        <!-- google map -->
 
-        </form>
-    </div>
-    <!-- google map -->
+        <div class="container-fluid" id="map">
+            <map name="google-map">
+                <h1 class="text-center"></h1>
+            </map>
+        </div>
 
-    <div class="container fluid" id="map"></div>
-
-    <!-- footer section -->
-    <footer>
-        <p>kevinalex846@gmail.com/2019 egerton university</p>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">&copy;
+            <a href="https://gmail.com/kevinalex846@gmail.com"> kevinalex846@gmail.com</a>
+        </div>
     </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -279,7 +300,55 @@
         integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
         crossorigin="anonymous"></script>
     <!-- add an api key here -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+
+    <!-- local js -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
+
+
+<!-- preserve -->
+<!-- <form class="p-2">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Remember my choice on next log in
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+
+                <button type="submit" class="btn btn-primary form-control">Rate</button>
+            </div>
+        </div>
+
+
+    </form> -->
