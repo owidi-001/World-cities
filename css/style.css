@@ -41,7 +41,7 @@ nav.navbar a.navbar-brand{
     font-weight: 700;
 }
 section#showcase{
-    background-image: url('../imgs/two.jpg');
+    background-image: url('../imgs/showcase.jpg');
     background-attachment: fixed;
     background-blend-mode: screen;
     height: 800px;
