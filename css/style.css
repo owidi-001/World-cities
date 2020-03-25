@@ -3,7 +3,7 @@ html,body{
     margin: 0;
     box-sizing: border-box;
     color: rgb(12, 31, 59);
-    /* background-color: rgb(44, 43, 43); */
+    /* background-color: rgb(5, 5, 22) !important; */
 }
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
@@ -34,6 +34,9 @@ nav.navbar{
     background-color: rgb(3, 3, 26)!important;
     color: whitesmoke;
     text-transform: uppercase;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 nav.navbar a.navbar-brand{
     margin-left: 20px;
@@ -56,7 +59,7 @@ section#showcase div.row div.caption-title{
    color: rgb(255,255, 255);
     border-right:10px solid rgb(12, 31, 59);;
 }
-section#showcase div.row div.title{
+section#showcase div.row div.title h2{
     margin: 100px auto;
     text-transform: uppercase;
     font-size: 70px;
@@ -64,16 +67,21 @@ section#showcase div.row div.title{
     /* color: rgb(12, 31, 59); */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+section#showcase div.row div.title h2{
+    border: 6px solid #fff;
+}
 /* The animation code */
 @keyframes animText {
     /* from {color: rgba(12, 31, 59, 0.103);} */
-    from {color: rgb(206, 213, 223);}
-    to {color: rgb(12, 31, 59);}
+    from {color: rgba(255, 255, 255, 0.199);}
+    /* to {color: rgb(12, 31, 59);} */
+    to {color: rgb(255, 255, 255);}
 }
 
 /* The element to apply the animation to */
 section#showcase div.row div.title{
-    color: rgb(12, 31, 59);
+    /* color: rgb(12, 31, 59); */
+    color: #fff;
     animation-name: animText;
     animation-duration: 8s;
     animation-delay: 0.5s;
@@ -148,22 +156,22 @@ section#showcase div.row div.title{
     display: inline-block;
     margin:0 10px 10px 10px;
 }
-#jumbotron div.side-content h1::after{
+/* #jumbotron div.side-content h1::after{
     content: "";
     height: 4px;
     width: 8vw;
     background: rgb(202, 202, 202);
     display: inline-block;
     margin: 0 10px 10px 10px;;
-}
+} */
 #jumbotron div.side-content div.text-right p.text{
     color: #fff;
-    font-size: small;
+    font-size: large;
 }
-@keyframes textFlow {
+/* @keyframes textFlow {
     from {margin-left:50%;color: rgb(202, 202, 202);font-size:small;}
     to {margin-left:0;color: #fff;font-size: smaller;}
-}
+} */
 
 #jumbotron div.side-content div.text-right p.text{
     animation-name: textFlow;
@@ -171,10 +179,23 @@ section#showcase div.row div.title{
     animation-delay: 0.2s;
 } 
 section#extras{
+    position: relative;
+    text-align: center;
     height: 600px;
-    background: rgb(3, 0, 36);
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
 }
+/* overlay text */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    background-color: #fff;
+    font-size: 50px;
+    mix-blend-mode: screen;
+
+  }
 
 section#more div.jumbotron-fluid{
     min-height: 500px;
