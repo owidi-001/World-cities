@@ -21,15 +21,14 @@ a.btn {
   font-family: var(--font-family);
   font-weight: 400;
   text-decoration: none;
-  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--dark);
+  background: var(--white);
   padding: 0.8em;
-  background: var(--dark);
   z-index: 1em;
 }
 a.btn:hover {
-  letter-spacing: 0.5em;
+  letter-spacing: 0.1em;
   transition: var(--transition);
 }
 h2,
@@ -67,7 +66,8 @@ nav {
   left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   font-weight: 600;
 }
@@ -83,15 +83,9 @@ nav a.brand {
 nav .socio {
   padding: 1em 0 1em 0;
 }
-nav .menu a i {
-  padding: 0em 0 2em 0;
+.fa-bars{
+  font-weight: 800 !important;
 }
-
-/* nav:nth-child(2){
-    color: green;
-    padding:1em ;
-} */
-
 /* showcse text */
 #showcase .showcase-text {
   color: var(--white);
@@ -107,7 +101,7 @@ nav .menu a i {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 4em;
+  max-width: 12em;
 }
 
 .showcase-text .one h2 {
@@ -119,13 +113,14 @@ nav .menu a i {
 .showcase-text .one p {
   font-weight: 200;
   font-size: 1em;
+  max-width: 5em;
   padding: 0em 0em 3em 0em;
 }
 .showcase-text .one a {
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 1.5em;
   color: var(--theme);
 }
-
 .showcase-text .drop {
   display: flex;
   flex-direction: column;
@@ -282,9 +277,14 @@ section#cards {
 section#parallax {
   height: 100vh;
   /* background: url('../imgs/showcase/dark.jpg'); */
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 1)
+    ),
     url("../imgs/parallax/moon.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 #parallax .wrapper {
   position: relative;
@@ -331,7 +331,7 @@ section#parallax {
   position: absolute;
   bottom: 8em;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   overflow-x: hidden;
 }
@@ -341,11 +341,13 @@ section#parallax {
 #parallax .bottom a img {
   height: 100px;
   opacity: 0.5;
-  filter: invert(1);
+  filter: grayscale();
+  /* filter: invert(1); */
 }
 #parallax .bottom a img:hover {
   opacity: 1;
-  filter: invert(0);
+  filter: none;
+  /* filter: invert(0); */
   transition: var(--transition);
 }
 #parallax .bottom .hidden {
@@ -429,35 +431,34 @@ footer .wrapper {
   height: 80vh;
   /* background: green; */
 }
-footer .contact-info{
+footer .contact-info {
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: space-between;
 }
-footer .contact-info h6{
+footer .contact-info h6 {
   font-weight: 600;
   font-family: var(--font-family);
   padding-top: 0.5em;
   opacity: 0.5;
 }
-footer .contact-info p{
+footer .contact-info p {
   opacity: 0.5;
   font-size: smaller;
 }
 /* footer .contact-info img{
 
 } */
-footer form{
+footer form {
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: space-between;
-
 }
-footer .form-group label{
+footer .form-group label {
   text-transform: uppercase;
   font-weight: 600;
   font-family: var(--font-family);
@@ -468,7 +469,11 @@ footer form input,
 textarea {
   border: none;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1),rgba(0,0,0,0.2 ));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)
+  );
   border-bottom: 1px solid rgb(53, 53, 53);
   color: var(--white);
   font-size: 1.2em;
@@ -481,13 +486,13 @@ textarea {
   background: var(--black);
   width: 100%;
 }
-.copyright .wrapper{
+.copyright .wrapper {
   max-width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.copyright p{
+.copyright p {
   /* position: absolute; */
   color: var(--white);
   font-family: var(--font-family);
@@ -495,4 +500,3 @@ textarea {
   padding: 0.5em;
   bottom: 0;
 }
-

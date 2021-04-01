@@ -1,72 +1,28 @@
-$(function () {
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.anims .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-    function initMap() {
-
-        var location = new google.maps.LatLng(50.0875726, 14.4189987);
-
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-            center: location,
-            zoom: 16,
-            panControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-
-        var markerImage = 'marker.png';
-
-        var marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            icon: markerImage
-        });
-
-        var contentString = '<div class="info-window">' +
-                '<h3>Info Window Content</h3>' +
-                '<div class="info-content">' +
-                '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
-                '</div>' +
-                '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 400
-        });
-
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
-
-
-    }
-
-    google.maps.event.addDomListener(window, 'load', initMap);
-});
-
-
-
-
-
-
-// var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-// function initialize() {
-//     var mapProp = {
-//         center: myCenter,
-//         zoom: 12,
-//         scrollwheel: false,
-//         draggable: false,
-//         mapTypeId: google.maps.MapTypeId.ROADMAP
-//     };
-
-//     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-//     var marker = new google.maps.Marker({
-//         position: myCenter,
-//     });
-
-//     marker.setMap(map);
-// }
-
-// google.maps.event.addDomListener(window, 'load', initialize);
-
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml1 .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.ml1 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.ml1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
